@@ -1,0 +1,45 @@
+const HEADER_HTML = `
+<header>
+    <h1>Travel Guide</h1>
+    <!-- Navigation Bar-->
+    <nav class="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="dropdownMenu">
+            <button class="dropbutton">Pages 
+                <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div class="options">
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <a href="destination1.html">Cliffs of Moher</a>
+        <a href="destination2.html">Giant's Causeway</a>
+        <a href="destination3.html">Kalmar Castle</a>
+        <a href="destination4.html">Stockholm</a>
+    </nav>
+</header>
+`;
+
+const FOOTER_HTML = `
+<footer>
+        <p>&copy; 2026 Travel Guide. All rights reserved.</p>
+</footer>
+`;
+
+function loadHeader() {
+  const header = document.getElementById('header');
+  if (header) {
+    header.innerHTML = HEADER_HTML;
+  }
+}
+
+function loadFooter() {
+  const footer = document.getElementById('footer');
+  if (footer) {
+    footer.innerHTML = FOOTER_HTML;
+  }
+}

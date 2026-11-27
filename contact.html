@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+    <script src="contact.js" defer></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>loadHeader();</script>
+
+    <main class="contact-page">
+
+        <h1>Contact Us</h1>
+        <p>Have a Question? Get in touch with us.</p>
+
+        <div class="contact-container">
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+
+                <h3>Email</h3>
+                <p>23374551@studentmail.ul.ie</p>
+            </section>
+
+            <form class="contact-form" id="contact-form">
+                <h2>Send us a Message</h2>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter Your Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your Email" required>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter a subject" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                          rows="6"
+                          placeholder="Enter your Message" required>
+                </textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="form-message" role="status"></p>
+                <p>
+                    This contact form is for demonstration purposes only.
+                </p>
+            </form>
+        </div>
+    </main>
+    
+    <div id="footer"></div>
+    <script>loadFooter();</script>
+</body>
+</html>

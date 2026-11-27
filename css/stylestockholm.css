@@ -1,0 +1,257 @@
+/* Consistent Box Sizing */
+* {
+    box-sizing: border-box;
+}
+/* stockholm specific CSS */
+.stockholmimage {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Page Style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f5ed;
+    color: #263d2e;
+    line-height: 1.6;
+    padding-bottom: 100px;
+}
+
+/* About Page Styling */
+.about-section {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border: 1px solid #d5e2d5;
+
+    border-radius: 6px;
+
+}
+
+h1{
+    text-align: center;
+    color: #24543c;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+/* About Page Headings */
+.about-section h1,
+.about-section h2 {
+    margin-top: 0;
+    color: #24543c;
+    font-family: Georgia, serif;
+}
+
+
+
+/* About Page Text */
+.about-section p,
+.about-section li {
+    color: #526454;
+}
+
+/* Links Within About Sections */
+.about-section a {
+    color: #24543c;
+    text-underline-offset: 4px;
+}
+
+.about-section a:hover {
+    color: #163c29;
+}
+
+/* Header */
+header {
+    background-color: #24543c;
+
+}
+
+/* Website Title */
+header h1 {
+    margin: 0;
+    padding: 20px 15px 12px;
+
+    text-align: center;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+}
+
+/* Fixed footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    background-color: #24543c;
+    color: #ffffff;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-underline-offset: 4px;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #24543c;
+}
+
+/* Navigation Links */
+.navigation a {
+    display: block;
+    padding: 15px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: inherit;
+    text-align: center;
+}
+
+/* Navigation Hover and Keyboard Focus */
+.navigation a:hover,
+.navigation a:focus-visible,
+.dropdownMenu:hover .dropbutton,
+.dropdownMenu:focus-within .dropbutton {
+    background-color: #163c29;
+    color: #ffffff;
+}
+
+/* Dropdown Container */
+.dropdownMenu {
+    position: relative;
+}
+
+/* Dropdown Button */
+.dropdownMenu .dropbutton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 15px;
+    margin: 0;
+    border: none;
+
+    background-color: transparent;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+
+    background-color: #24543c;
+
+    border-radius: 0 0 6px 6px;
+
+}
+
+/* Dropdown Links */
+.options a {
+    display: block;
+    padding: 12px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 18px;
+    background-color: #24543c;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #163c29;
+}
+
+.back-button:focus-visible {
+    outline: 3px solid #906b22;
+    outline-offset: 4px;
+}
+
+/* Open Dropdown With Mouse or Keyboard */
+.dropdownMenu:hover .options,
+.dropdownMenu:focus-within .options {
+    display: block;
+}
+
+/* Visible Keyboard Focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ba913e;
+    outline-offset: -3px;
+}
+
+/* About Page Image */
+.about-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 6px;
+}
+
+.destination-page {
+    padding-bottom: 40px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    .about-section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .navigation a,
+    .dropdownMenu .dropbutton {
+        padding: 12px;
+    }
+
+    header h1 {
+        padding-top: 16px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <script src="main.js"></script>
+    <script src="gallery.js" defer></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>loadHeader();</script>
+    
+    <main>
+        <a href="index.html" class="back-button">Back to Home</a>
+    <section class="photo-gallery" aria-labelledby="gallery-title">
+        <h1 id="gallery-title">Gallery</h1>
+
+    <p>
+        Explore Ireland and Sweden through our favourite photos.
+    </p>
+
+        <!-- JavaScript changes this image and its description. -->
+        <img
+            id="gallery-image"
+            src="images/cliffsOfMoher.webp"
+            alt="The Cliffs of Moher"
+        >
+
+        <div class="gallery-controls">
+            <button id="previous-button" type="button">
+                Previous
+            </button>
+
+            <p id="image-counter" aria-live="polite">
+                Image 1 of 5
+            </p>
+
+            <button id="next-button" type="button">
+                Next
+            </button>
+        </div>
+    </section>
+    </main>
+
+    <div id="footer"></div>
+    <script>loadFooter();</script>
+</body>
+</html>
